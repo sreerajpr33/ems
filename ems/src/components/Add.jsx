@@ -13,7 +13,7 @@ const AddEmployee=()=>{
     const[experiance,setExp]=useState('')
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post(`https://aiswarya2325.pythonanywhere.com/employemanagement/employees/`,{empid,name,address,position,salary,phone,email,experiance})
+        axios.post(`https://alan2325.pythonanywhere.com/employe/employees/I/`,{empid,name,address,position,salary,phone,email,experiance})
         .then(response =>{
             console.log(response.data);
             setId('')
